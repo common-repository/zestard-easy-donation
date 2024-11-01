@@ -1,0 +1,891 @@
+/* Donation option post type css start*/
+.post-type-donation_option table tr.type-donation_option td.column-donation_thumbnail img {
+    max-width: 60px !important;
+    max-height: 50px;
+}
+
+/* Donation option post type css end */
+.zted_admin_layout .zted_dashboard_details li {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+.zted_admin_layout .zted_dashboard_details li h4 {
+    vertical-align: top;
+    text-align: left;
+    width: 200px;
+    line-height: 1.3;
+    font-weight: 600;
+    margin: 0px;
+    color: #23282d;
+    padding: 8px 0;
+}
+
+.zted_admin_layout .zted_dashboard_details li span.zted_dashboard_details_title {
+    float: left;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.zted_admin_layout {
+    padding: 20px 20px 0 0;
+}
+.zted_admin_layout .zted_backend_config_tabs {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* tab list item */
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li {
+    float: left;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-left: .5em;
+    padding: 5px 10px;
+    background: #e5e5e5;
+    margin-bottom: 0;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li:hover {
+    background-color: #21a2bd;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li:hover {
+    cursor: pointer;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li a {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.71428571;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding-top: 9px;
+    padding-bottom: 0;
+    line-height: inherit;
+}
+.zted_admin_layout .zted_backend_config_tabs #zted_support_tab ul {
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #7e8993;
+    background-color: #fff;
+    color: #32373c;
+    padding: 10px;
+}
+/* Tab content section */
+.zted_admin_layout .zted_backend_config_tabs .zted_tab {
+    display: none;
+    color: darkslategray;
+    clear: both;
+    font-size: 14px;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tab h3 {
+    border-bottom: 3px solid #2f889a;
+    letter-spacing: 1px;
+    font-weight: normal;
+    padding: 5px;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tab p {
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+
+/* When active state */
+.zted_admin_layout .zted_backend_config_tabs .zted_active {
+    display: block;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li.zted_active,
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li.zted_active:hover,
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li.zted_active:focus {
+    border-bottom: 1px solid #f1f1f1;
+    background: #f1f1f1;
+    margin-bottom: -1px;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li:hover,
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li:focus {
+    background-color: #fff;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li:hover a,
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li:focus a{
+    color: #444;
+}
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li.zted_active a,
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li.zted_active:hover a,
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li.zted_active:focus a {
+    color: black;
+}
+
+/* Payment configuration status Enable/Disable switch start */
+.zted_admin_layout .zted_donation_switch {
+    position: relative;
+    width: 90px;
+    float: left;
+    margin-left: 65px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.zted_admin_layout .zted_donation_switch-checkbox {
+    display: none !important;
+}
+.zted_admin_layout .zted_donation_switch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #935687;
+    border-radius: 20px;
+}
+.zted_admin_layout .zted_donation_switch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.zted_admin_layout .zted_donation_switch-inner:before,
+.zted_admin_layout .zted_donation_switch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.zted_admin_layout .zted_donation_switch-inner:before {
+    content: "Enable";
+    padding-left: 10px;
+    background-color: #935687;
+    color: #ffffff;
+}
+.zted_admin_layout .zted_donation_switch-inner:after {
+    content: "Disable";
+    padding-right: 8px;
+    background-color: #eeeeee;
+    color: #5d656c;
+    text-align: right;
+}
+.zted_admin_layout .zted_donation_switch-switch {
+    display: block;
+    width: 18px;
+    margin: 6px;
+    background: #ffffff;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #935687;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.zted_admin_layout .zted_donation_switch-checkbox:checked + .zted_donation_switch-label .zted_donation_switch-inner {
+    margin-left: 0;
+}
+.zted_admin_layout .zted_donation_switch-checkbox:checked + .zted_donation_switch-label .zted_donation_switch-switch {
+    right: 0px;
+}
+/* Payment configuration status Enable/Disable switch end */
+
+/* Donation tab data css*/
+.zted_admin_layout .zted_donation_view_type {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+.zted_admin_layout .zted_donation_view_type input[type="radio"] {
+    width: 30px;
+    height: 19px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.zted_admin_layout #zted_donation_dropdown .zted_add_price_field {
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #2f889a;
+    border-color: #2f889a;
+    width: 100%;
+    max-width: 278px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    outline: none;
+}
+.zted_admin_layout #zted_donation_tab .zted_donation_mode label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.zted_admin_layout #zted_donation_tab .zted_donation_mode p br {
+    display: none;
+}
+.zted_admin_layout div#zted_donation_input_field input[type="submit"]{
+    background-color: #21a2bd;
+}
+.zted_admin_layout #zted_donation_dropdown input {
+    border: 1px solid #d6d8d7;
+    width: 160px;
+    margin: 7px 0px;
+    background-color: #f8f8f8;
+    min-height: 35px;
+}
+
+.zted_admin_layout #zted_donation_dropdown .zted_delete {
+    background-color: #2f889a;
+    border: none;
+    color: white;
+    padding: 8.7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.zted_admin_layout #zted_donation_tab .zted_donation_mode {
+    display: none;
+}
+
+.zted_admin_layout #zted_email_notification_tab table td#zted_recipient_info fieldset span {
+    display: inherit;
+    margin-bottom: 10px;
+    width: 88%;
+}
+
+.zted_admin_layout .zted_backend_config_tabs .zted_tabs-list li a:focus {
+    box-shadow: none;
+}
+.zted_admin_layout #zted_email_notification_tab table td#zted_recipient_info fieldset span .zted_recipient_email_sec {
+    display: inline-block;
+    width: 50px;
+}   
+.zted_admin_layout div#zted_email_notification_tab input#zted_template_subject, div#zted_email_notification_tab input#zted_donation_heading, div#zted_email_notification_tab textarea#zted_donation_addi_contnt, select#zted_donation_email_type {
+    width: 100%;
+    max-width: 400px;
+    min-height: 30px;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #7e8993;
+    background-color: #fff;
+    color: #32373c;
+}
+.zted_admin_layout div#zted_email_notification_tab input#zted_donation_recipient_from, div#zted_email_notification_tab input#zted_donation_recipient_cc {
+    width: 100%;
+    max-width: 349px;
+    min-height: 30px;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #7e8993;
+    background-color: #fff;
+    color: #32373c;
+}
+.zted_admin_layout div#zted_email_notification_tab input#zted_donation_recipient_from:focus, 
+div#zted_email_notification_tab input#zted_donation_recipient_cc:focus,
+.zted_admin_layout div#zted_email_notification_tab input#zted_template_subject:focus, 
+div#zted_email_notification_tab input#zted_donation_heading:focus, 
+div#zted_email_notification_tab textarea#zted_donation_addi_contnt:focus, select#zted_donation_email_type:focus{
+    border-color: #007cba;
+    box-shadow: 0 0 0 1px #007cba;
+    outline: 2px solid transparent;
+}
+.zted_admin_layout input[type="text"]:focus {
+    box-shadow: 0px 2px 4px #ccc;
+    outline: none;
+}
+.zted_admin_layout #zted_donation_tab .zted_donation_mode input {
+    border-color: #d6d8d7;
+    background-color: #f8f8f8;
+    min-height: 35px;
+}
+.zted_admin_layout .zted_backend_config_tabs #zted_support_tab h4 {
+    font-size: 16.9px;
+    color: #23282d;
+    margin: 13.9px 00;
+}
+.zted_admin_layout div#zted_track_donation_tab select#zted_select_track_donation {
+    position: absolute;
+    right: 8px;
+    bottom: -20px;
+}
+.zted_admin_layout div#zted_support_tab p a {
+    background-color: #2f889a;
+    color: white;
+    padding: 8px 15px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.zted_admin_layout div#zted_support_tab p a:hover,
+.zted_admin_layout #zted_donation_dropdown .zted_add_price_field:hover{
+    background-color: #21a2bd;
+}
+.zted_admin_layout div#zted_dashboard_tab input[type="text"], div#zted_dashboard_tab textarea {
+    width: 100%;
+    max-width: 400px;
+    min-height: 30px;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #7e8993;
+    background-color: #fff;
+    color: #32373c;
+}
+.zted_admin_layout div#zted_dashboard_tab input[type="text"]:focus, div#zted_dashboard_tab textarea:focus{
+    border-color: #007cba;
+    box-shadow: 0 0 0 1px #007cba;
+    outline: 2px solid transparent;
+}
+.zted_admin_layout div#zted_dashboard_tab ul.zted_dashboard_details .zted_dashboard_details_title {
+    width: calc(100% - 100px);
+}
+.zted_admin_layout #zted_donation_tab .zted_donation_view_type input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    border-color: #d6d8d7;
+}
+.zted_admin_layout input {
+    border-color: #d6d8d7;
+}
+.zted_admin_layout #zted_donation_tab .zted_donation_view_type {
+    display: flex;
+    align-items: center;
+}
+.zted_admin_layout #zted_donation_tab .zted_donation_view_type input[type=radio]:checked::before {
+    background-color: #2f889a;
+}
+.zted_admin_layout div#zted_dashboard_tab ul.zted_dashboard_details li[data-gateway_id="zted_donation_on_cart"], 
+.zted_admin_layout div#zted_dashboard_tab ul.zted_dashboard_details li[data-gateway_id="zted_donation_on_checkout"],.zted_admin_layout div#zted_dashboard_tab ul.zted_dashboard_details li[data-gateway_id="zted_donation_on_checkout_inner"] {
+    width: 100%;
+    max-width: 388px;
+    display: flex;
+    padding: 0px 0px 0px 10px;
+    border-radius: 50px;
+    background: white;
+    box-shadow: 0 0 0 transparent;
+    border: 1px solid #7e8993;
+    background-color: #fff;
+    color: #32373c;
+}
+.zted_admin_layout div#zted_dashboard_tab .zted_dashboard_details .zted_donation_switch {
+    margin-left: auto;
+}
+
+.zted_admin_layout div#zted_donation_input_field input[type="submit"] {
+    background-color: #2f889a;
+    color: white;
+    border: none;
+    padding: 5.8px 15px;
+    border-radius: 4px;
+}
+.zted_admin_layout div#zted_donation_tab div#zted_donation_pricebar input {
+    padding-right: 0;
+    margin-top: 5px;
+}
+.zted_admin_layout div#zted_track_donation_tab p {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+}
+div#zted_track_donation_tab p .zted_tracking_status {
+    font-size: 18px;
+    display: block;
+}
+
+div#zted_email_notification_tab .zted_form-table th {
+    vertical-align: top;
+    text-align: left;
+    padding: 11px 10px 12px 0;
+    width: 200px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+div#zted_email_notification_tab .zted_form-table {
+    width: 100%;
+}
+div#zted_email_notification_tab .zted_form-table td fieldset legend {
+    display: none;
+}
+
+div#zted_email_notification_tab .zted_form-table td fieldset {
+    padding: 10px 10px 8px;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+div#zted_email_notification_tab .zted_form-table td {
+    padding-bottom: 0;
+}
+.zted_admin_layout .zted_donation_view_type ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.zted_admin_layout #zted_donation_tab .zted_donation_mode .zted_input_amount_cntnt {
+    background: #2f889a;
+    border-color: #2f889a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.zted_admin_layout .zted_donation_view_type ul li {
+    background: #2f889a;
+    border: 2px solid #fff;
+    font-size: 14px;
+    padding: 5.3px 16px 6px 10px;
+    margin-right: 10px;
+    outline: 2px solid #2f889a;
+    }
+
+.zted_admin_layout .zted_donation_view_type ul li input[type="radio"] {
+    margin-left: 0;
+}
+
+.zted_admin_layout .zted_donation_view_type ul li label {
+    color: white;
+}
+.zted_admin_layout #zted_donation_tab .zted_donation_mode input {
+    border-color: #d6d8d7;
+    background-color: #f8f8f8;
+    min-height: 35px;
+}
+.zted_admin_layout #zted_donation_tab #zted_donation_input_field p:first-child {
+    display:none;
+}
+/* ------------------ frontend css -------------------*/
+#zted_donation_front .zted_accordion {
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 4px;
+    background: #f9f9f9;
+    border: 1px solid #555;
+    color: #555;
+}
+
+#zted_donation_front .zted_active, #zted_donation_front .zted_accordion:hover {
+    background-color: #e1e1e1; 
+}
+#zted_donation_front .zted_donation_front_form .zted_accordion.zted_active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#zted_donation_front .zted_panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white!important;
+    overflow: hidden;
+}
+#zted_donation_front .zted_panel select[name="zted_donation_view_type"]{
+    font-size: 1em;
+    width: 100px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+/*price range slider css */
+#zted_donation_front .zted_slidecontainer {
+    width: 100%;
+}
+
+#zted_donation_front .zted_slider {
+    -webkit-appearance: block;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#zted_donation_front .zted_slider:hover {
+    opacity: 1;
+}
+
+#zted_donation_front .zted_slider::-webkit-slider-thumb {
+    -webkit-appearance: block;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    cursor: pointer;
+}
+
+#zted_donation_front .zted_slider::-moz-range-thumb {
+    width: 23px;
+    height: 24px;
+    border: 0;
+    cursor: pointer;
+}
+#zted_donation_front .zted_donation_front_form .zted_panel {
+    position: relative;
+    padding: 16px 20px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+#zted_donation_front .zted_donation_front_form .zted_panel span.zted_currencyinput {
+    position: absolute;
+    left: 29px;
+    margin-top: 8px;
+    font-size: 18px;
+}
+#zted_donation_front .zted_donation_front_form input[name="donation_input_amt"]{
+    padding-left: 20px !important; 
+}
+
+#zted_donation_front .zted_donation_front_form input[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #d6d8d7;
+    background-color: #f8f8f8;
+    font-size: 15px;
+}
+
+#zted_donation_front .zted_donation_front_form  p {
+    border: none;
+    margin-bottom: 10px;
+    display: flex;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#zted_donation_front .zted_donation_front_form  .zted_submit_option {
+    display: flex;
+    flex-wrap: wrap;
+    width: 251px;
+}
+
+#zted_donation_front.zted_checkout_wrap .zted_donation_front_form .zted_submit_option {
+    padding-left: 8px;
+}
+
+#zted_donation_front .zted_donation_front_form 
+.zted_panel .zted_submit_donation {
+    margin-top: 8px;
+    color: #ffffff;
+    display: flex;
+    height: auto;
+    padding: 10px 22px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    line-height: 22px;
+    background: #117140;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+#zted_donation_front.zted_checkout_wrap .zted_donation_front_form 
+.zted_panel .zted_submit_donation{
+    margin-top: 0px !important;
+}
+
+#zted_donation_front .zted_donation_front_form 
+.zted_panel .zted_remove_donation {
+     background: transparent;
+    color: red;
+    font-size: 12px;
+    width: auto;
+    padding: 10px;
+}
+
+#zted_donation_front .zted_donation_front_form input[type="text"]:focus {
+    box-shadow: 0px 2px 4px #ccc;
+    outline: none;
+}
+#zted_donation_front .zted_donation_front_form .zted_panel select {
+    margin-bottom: 10px;
+    width: 224px;
+    float: left;
+    height: auto;
+    padding: 10px 6px;
+    border: 1px solid #d6d8d7;
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+#zted_donation_front .zted_donation_front_form .zted_panel select:focus {
+    box-shadow: 0px 2px 4px #ccc;
+    outline: none;
+}
+#zted_donation_front .zted_donation_front_form .zted_panel img {
+    width: 150px;
+    float: left;
+    padding-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-right: 10px;
+    }
+
+#zted_donation_front .zted_donation_front_form .zted_panel .zted_slidecontainer {
+    width: 100%;
+    max-width: 220px;
+    float: left;
+    margin-right: 15px;
+}
+#zted_donation_front  {
+    border: 1px solid #eee;
+    padding: 7px 15px;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+}
+
+ #zted_donation_front h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+#zted_donation_front .zted_donation_description {
+    display: flex;
+}
+#zted_donation_front .zted_donation_front_form .zted_accordion:after {
+    content: "+";
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    right: 21px;
+    top: 5px;
+}
+#zted_donation_front .zted_donation_front_form .zted_accordion.zted_active:after {
+    content: "-";
+    font-size: 30px;
+    font-weight: 400;
+    top: 1px;
+}
+#zted_donation_front .zted_donation_front_form .zted_accordion {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 15px;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    position: relative;
+}
+#zted_donation_front .zted_donation_front_form .zted_panel label#zted_other_amount_input {
+    float: left;
+    width: 224px
+}
+
+#zted_donation_front .zted_donation_front_form .zted_panel label#zted_other_amount_input input[name="custom_selected_amt"]{
+    width: 224px
+}
+
+#zted_donation_front .zted_donation_front_form .zted_panel label[for="zted_donation_input_amt"], #zted_donation_front .zted_donation_front_form .zted_panel label[for="zted_choose_donation_amt"]{
+    display: block;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
+}
+
+/* Donation view css */
+
+div#zted-donation-option-info-metabox .zted_donation_view_type label {
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+div#zted-donation-option-info-metabox .zted_donation_view_type ul {
+    display: flex;
+    align-items: center;
+}
+
+div#zted-donation-option-info-metabox .zted_donation_view_type li {
+    margin: 4px 0 0px;
+    padding-right: 15px;
+}
+
+#zted_donation_dropdown .zted_add_price_field {
+    background: #007cba;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2.15384615;
+    min-height: 30px;
+    margin: 0;
+    padding: 0 10px 0px 21px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    outline: none;
+    position: relative;
+    margin-bottom: 10px;
+}
+#zted_donation_dropdown .zted_add_price_field:before {
+    content: "+";
+    font-size: 15px;
+    font-weight: 700;
+    padding-right: 5px;
+    position: absolute;
+    left: 7px;
+    top: -2px;
+}
+
+div#zted_donation_dropdown .zted_donation_dropdown_pricing {
+    font-size: 14px;
+    color: #23282d;
+    line-height: 1.3;
+    font-weight: 600;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    cursor: move;
+}
+
+div#zted_donation_dropdown .zted_donation_dropdown_pricing input[type="number"] {
+    margin-left: 20px;
+}
+
+div#zted_donation_dropdown .zted_donation_dropdown_pricing a.zted_delete {
+    width: 36px;
+    background: #007cba;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 5px 0px 8px;
+    line-height: 18px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+div#zted_other_amt_sec {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+div#zted_other_amt_sec .zted_other_amt_field {
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #7e8993;
+    background-color: #fff;
+    color: #32373c;
+    margin-left: 10px;
+}
+div#zted_donation_pricebar label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+div#zted_donation_pricebar br {
+    display: none;
+}
+div#zted_donation_input_field p.zted_input_amount_cntnt span{
+    color: #000;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+}
+div#zted_donation_input_field p.zted_input_amount_cntnt {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 15px;
+}
+figure.zted_highcharts-figure {
+    margin-left: 0;
+}
+div#zted_track_donation_form a {
+    background: #007cba;
+    border-color: #007cba;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2.15384615;
+    min-height: 30px;
+    margin: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+div#zted_track_donation_form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+div#zted_track_donation_form #zted_select_donation_year {
+    margin: 0px 5px;
+}
+div#zted_track_donation_form span.zted_tracking_status{
+    width: 100%;
+    font-size: 23px;
+    padding-left: 280px;
+    margin-top: 100px;
+    font-weight: 600;
+}
+
+#zted_donation_front + a.checkout-button:focus {
+    outline: none;
+}
+
+#zted_donation_front .zted_donation_front_form .zted_panel .zted_submit_donation:focus {
+    outline: none;
+}
+
+#zted_donation_front .zted_donation_front_form .zted_panel .zted_remove_donation:focus {
+    outline: none;
+}
+
+#zted_donation_front .zted_donation_front_form .zted_panel input[type="number"]:focus {
+    outline: none;
+}
